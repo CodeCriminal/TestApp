@@ -15,8 +15,8 @@ import java.util.Calendar;
 
 
 public class MainActivity extends Activity {
-    TextView tV1,tV2;
-    SharedPreferences sharedPreferences;
+    TextView tV1, tV2;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -25,13 +25,11 @@ public class MainActivity extends Activity {
         SimpleDateFormat format = new SimpleDateFormat("HH:mm:ss");
         String time = format.format(calendar.getTime());
         TextView textView = findViewById(R.id.tV2);
+        TextView tV1 = findViewById(R.id.tV1);
         textView.setText(time);
-        MySharedPreferences.myInstance().SaveData(String.valueOf(calendar.getTime()));
-        tV1.setText(String.valueOf(MySharedPreferences.myInstance().getMyData()));
-        }
-        private void save(String time) {
-            MySharedPreferences.myInstance().SaveData(time);
-        }
+        tV1.setText(MySharedPreferences.myInstance().getMyData());
+
+    }
 
 }
 
