@@ -29,13 +29,12 @@ public class MainActivity extends Activity {
         textView.setText(time);
         MySharedPreferences.myInstance().SaveData(String.valueOf(calendar.getTime()));
         tV1.setText(String.valueOf(MySharedPreferences.myInstance().getMyData()));
-
         }
-
         private void save(String time) {
             MySharedPreferences.myInstance().SaveData(time);
         }
-    }
+
+}
 
 
 
