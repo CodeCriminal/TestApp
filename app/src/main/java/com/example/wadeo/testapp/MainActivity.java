@@ -16,8 +16,7 @@ import java.util.Calendar;
 
 public class MainActivity extends Activity {
     TextView tV1,tV2;
-    public static final String CURRENT_TIME = "CURRENT_TIME";
-    SharedPreferences Share;
+    SharedPreferences sharedPreferences;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

@@ -9,10 +9,10 @@ public class MySharedPreferences {
 
     private static MySharedPreferences myInstance;
 
-    private SharedPreferences sharedPreferences;
+    private SharedPreferences MySharedPreferences;
 
     public void setupShareds(Context context) {
-        sharedPreferences = context.getSharedPreferences("my shareds", Context.MODE_PRIVATE);
+        MySharedPreferences = context.getSharedPreferences("my shareds", Context.MODE_PRIVATE);
     }
 
     public static MySharedPreferences myInstance() {
@@ -23,13 +23,13 @@ public class MySharedPreferences {
     }
 
     public void SaveData(String CurrentTime) {
-        SharedPreferences.Editor editor = sharedPreferences.edit();
+        SharedPreferences.Editor editor = MySharedPreferences.edit();
         editor.putString(current_time, CurrentTime);
         editor.apply();
     }
 
     public String getMyData() {
-        return sharedPreferences.getString(current_time, "");
+        return MySharedPreferences.getString(current_time, "");
     }
 
 }
