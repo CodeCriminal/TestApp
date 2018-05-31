@@ -29,8 +29,7 @@ public class MainActivity extends Activity {
         TextView textView = findViewById(R.id.tV2);
         textView.setText(time);
         MySharedPreferences.myInstance().SaveData(String.valueOf(calendar.getTime()));
-        TextView textView2 = findViewById(R.id.tV1);
-        MySharedPreferences.myInstance().getMyData();
+        textView.setText(String.valueof(MySharedPreferences.myInstance().getData()));
 
         }
 
