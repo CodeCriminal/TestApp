@@ -7,13 +7,12 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 
 import android.view.View;
-import android.widget.Button;
 import android.widget.TextView;
-import android.widget.Toast;
+
 
 import java.text.SimpleDateFormat;
 import java.util.Calendar;
-import java.util.Date;
+
 
 public class MainActivity extends Activity {
     TextView tV1,tV2;
@@ -29,7 +28,7 @@ public class MainActivity extends Activity {
         TextView textView = findViewById(R.id.tV2);
         textView.setText(time);
         MySharedPreferences.myInstance().SaveData(String.valueOf(calendar.getTime()));
-        textView.setText(String.valueof(MySharedPreferences.myInstance().getData()));
+        tV1.setText(String.valueOf(MySharedPreferences.myInstance().getMyData()));
 
         }
 
