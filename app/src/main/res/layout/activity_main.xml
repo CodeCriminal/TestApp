@@ -15,7 +15,7 @@
         android:layout_centerHorizontal="true"
         android:layout_gravity="center"
         android:layout_marginBottom="-232dp"
-        android:text="213123"
+        android:text=""
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         tools:layout_editor_absoluteX="139dp" />
@@ -28,7 +28,7 @@
         android:layout_centerHorizontal="true"
         android:layout_gravity="center"
         android:layout_marginTop="232dp"
-        android:text="3412412"
+        android:text="LastTime"
         tools:layout_editor_absoluteX="203dp"
         tools:layout_editor_absoluteY="246dp" />
 
